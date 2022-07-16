@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<style>
+    *{ 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #4084D7;
+        }
+
+        h1{
+            text-align: center;
+            margin-bottom: 40px;
+            color: white;
+        }
+
+        .container{
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -45%);
+        }
+
+        .caixa{
+            margin: 0 auto;
+            padding: 30px 30px 10px 30px;
+
+            background-color: #fff;
+            width: 400px;
+            border-radius: 5px;
+
+            -webkit-box-shadow: 10px 10px 20px -7px rgba(0,0,0,0.56);
+            box-shadow: 10px 10px 20px -7px rgba(0,0,0,0.56);    
+        }
+
+        input{
+            margin-bottom: 20px;
+            padding: 2px;
+            width: 160px;
+        }
+
+        label{
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        #btn{
+            padding: 1px 5px;
+        }
+
+        #res{
+            font-size: 0.8em;
+            position: relative;
+            top: 6px;
+            margin-bottom: 10px;
+        }
+
+        span{
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+        }
+                
+</style>
+<body>
+    <div class="container">
+        <header>
+            <h1>Analisador de números</h1>
+        </header>
+        <main>
+            <section>
+                <div class="caixa">
+                    <form action="">
+                        <!--Início-->
+                        <label for="number">Número (entre 1 a 100)</label>
+                        <input type="number" name="number" id="number" required>
+
+                        <button type="button" name="btn" id="btn">Gerar tabuada</button>
+                    </form>
+                    <select name="area" id="area">
+                        <option value="">Digite um número acima</option>
+                    </select>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <span>&copy; MoonCode</span>
+        </footer>
+    </div>
+    <script src="main.js" referrer></script>
+</body>
+</html>
