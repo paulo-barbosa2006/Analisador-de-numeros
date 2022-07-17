@@ -35,7 +35,7 @@
             padding: 30px 30px 10px 30px;
 
             background-color: #fff;
-            width: 400px;
+            max-width: 800px;
             border-radius: 5px;
 
             -webkit-box-shadow: 10px 10px 20px -7px rgba(0,0,0,0.56);
@@ -43,9 +43,8 @@
         }
 
         input{
-            margin-bottom: 20px;
+            margin-bottom: 5px;
             padding: 2px;
-            width: 160px;
         }
 
         label{
@@ -53,8 +52,12 @@
             font-size: 0.9em;
         }
 
-        #btn{
+        #adicionar{
             padding: 1px 5px;
+        }
+
+        select{
+            margin-bottom: 5px;
         }
 
         #res{
@@ -83,13 +86,13 @@
                     <form action="">
                         <!--Início-->
                         <label for="number">Número (entre 1 a 100)</label>
-                        <input type="number" name="number" id="number" required>
-
-                        <button type="button" name="btn" id="btn">Gerar tabuada</button>
+                        <input type="number" name="number" id="number" placeholder="Digite o número aqui" required>
+                        <button type="button" name="adicionar" id="adicionar">Adicionar</button><br>
+                        <select name="lista" id="lista" size="6" style="margin-top: 25px; width: 150px;">
+                        </select><br>
+                        <button type="button" name="finalizar" id="finalizar">Finalizar</button>
                     </form>
-                    <select name="area" id="area">
-                        <option value="">Digite um número acima</option>
-                    </select>
+                    <div id="res"></div>
                 </div>
             </section>
         </main>
